@@ -1,0 +1,92 @@
+Algebra Linear é importante! ;-;
+
+- Desafio para encontrar algo real e tentar tecnicas.
+- Formação para apresentar a ideia: como apresentar o resultado.
+- Premiação.
+
+> Qual técnica é boa, quando deve ser usada, qual seu custo, deve ou não deve ser usada?
+
+**Tema**: Reconhecimento Automático de Placass Veiculares.
+
+De alguma forma a partir de uma imagem reconhecer a placa de um veículo.
+
+A imagem *pode* te ajudar, ou nope! Vai que está distorcida... PDI! 
+
+Rastreamento de Veículo -> Reconhecimento ao mesmo tempo que se move de veículos que se movem.
+
+Parado x Parado, Parado x Movimento, Movimento x Movimento.
+
+ALPR:
+
+coleta local ou outro (remoto) -> seguir pipelines?
+
+Na coleta remota, há um local de coleta, e em seguida enviada para um local que faz o processamento e reconhecimento.
+
+Ou de forma Embarcada, em que no próprio local se há o processamento.
+
+Detecçao de Veículos, Detecção de Placas, Segmentação de Caracteres, Reconhecimento de Caracteres.
+
+Escala de Cinza -> Mediana -> Detecção de Bordas -> Extração de Placa -> Operações Morfológicas -> Segmentação de Caracteres -> Reconhecimento de Caracteres.
+
+YOLO (CNN) -> Reconhecimetno de Caracteres. Yolo é um conjunto de técnicas e redes neurais, mais a principio era em torno de detecção de objetos. A mesma arquitetura podia ser usadas para diferentes modelos/tipos de objetos.
+
+Remoção de Ruidos ou treinar com ruídos.
+
+-------------------------------------------------------------------
+
+A única parte que nos importa é a última parte que é de reconhecimento óptico de caracteres, ou seja só do reconhecimento dos caracteres de placas. Ou seja, só o que é, da-se uma letra: QUAL É!?
+
+Por que algo tão simples? Sujeira, Lixo, Sistema danificado, as tecnicas novas tem muita dificuldade em reconhecer com esses tipos de problemas, ainda.
+
+Dados Reais não são os mesmos que os Dados Treinados.
+
+License Plate Digits Classification Data Set
+35 Categorias
+0-9
+A-Z (Menos O, pois igual a Zero)
+
+---
+
+Acertar de 10,650 imagens de teste
+Possuir 24,850 imagens de treino.
+
+PNG preto e branco, 75%
+
+----
+
+Critérios de Avaliação:
+
+Acurácia:
+Acertos;
+Acertos por Digito. (Matriz de Confusão com os eixos de Predição e Resultado do Modelo)
+
+Eficiência Computacional:
+Tempo de Execução, para treinar, não importa muito, mas a resposta deve ser rápido e deve ter motivo;
+Consumo de Recursos, como memória, processamento e etc.
+
+----
+
+Regras Adicionais:
+
+- Não só apresentar, mas entregar também a resposta.
+- Apenas tecnologias open-source, livres e gratuitas: não deve ser usada soluções pré-processadas.
+- Pode ser usado ferramentas que auxilie e permita executar localmente depois, nada que seja fechada ou desconhecida.
+
+----
+
+Apresentação:
+
+Técnicas Usadas: Saber como e confiante;
+Acurácia e Análise de Erros: Porque e como? Até mesmo incertezas;
+Tempo de Execução;
+Recursos necessários para funcionamento da solução;
+Hardware Usado nos testes;
+Parecer Básico de quanto foi utilizado.
+
+----
+
+48h - QUINTA - 31/07 - 10h;
+Vídeo de 15 minutos no máximo, apresentando a solução com todas essas considerações, enviados no classroom.
+Apresentar como se fosse um tutorial.
+
+Além do vídeo, depois será mandado os códigos, ou seja, o material, daqui uma semana será a divulgação dos classificados, que irão apresentar nessa data. (TERÇA que vêm);
